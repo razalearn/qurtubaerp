@@ -1,0 +1,29 @@
+{
+    "version": 2,
+    "framework": null,
+    "buildCommand": "composer install --optimize-autoloader --no-dev && npm run build",
+    "outputDirectory": "public",
+    "functions": {
+        "api/*.php": {
+            "runtime": "vercel-php@0.7.1"
+        }
+    },
+    "routes": [
+        {
+            "src": "/(css|js|images|fonts|assets)/(.*)",
+            "dest": "/public/$1/$2"
+        },
+        {
+            "src": "/(.*)",
+            "dest": "/public/index.php"
+        }
+    ],
+    "env": {
+        "APP_NAME": "e-School",
+        "APP_ENV": "production",
+        "APP_DEBUG": "false",
+        "DB_CONNECTION": "pgsql",
+        "DB_PORT": "5432",
+        "DB_DATABASE": "postgres"
+    }
+}
