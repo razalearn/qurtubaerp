@@ -27,7 +27,8 @@
         "razorpay/razorpay": "^2.9",
         "spatie/laravel-permission": "^6.0",
         "stripe/stripe-php": "^18.0",
-        "unicodeveloper/laravel-paystack": "dev-l12-compatibility"
+        "unicodeveloper/laravel-paystack": "dev-l12-compatibility",
+        "supabase/supabase-php": "^2.0"
     },
     "repositories": [
         {

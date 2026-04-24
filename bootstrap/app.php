@@ -76,6 +76,7 @@ return Application::configure(basePath: dirname(__DIR__))
         \Laravel\Sanctum\SanctumServiceProvider::class,
         \dacoto\LaravelWizardInstaller\LaravelWizardInstallerServiceProvider::class,
         \Mahesh\UpdateGenerator\UpdateGeneratorServiceProvider::class,
+        \App\Providers\SupabaseServiceProvider::class,
     ])
     ->withExceptions(function (Exceptions $exceptions): void {
         //
