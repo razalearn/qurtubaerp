@@ -1,6 +1,9 @@
-```
+# Environment
+.env
+.env.local
+.env.*
+
 # Dependencies
-vendor/
 node_modules/
 
 # Build artifacts
@@ -8,37 +11,45 @@ dist/
 build/
 target/
 
-# Environment
-.env.local
-.env.*
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+.venv.bak/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Coverage
+.coverage
+coverage/
+htmlcov/
+.pytest_cache/
+.mypy_cache/
+.hypothesis/
 
 # IDE
 .vscode/
 .idea/
 *.swp
 *.swo
-
-# Logs
-*.log
+*~
 
 # OS
 .DS_Store
 Thumbs.db
 
-# Cache
-__pycache__/
-*.pyc
-.pytest_cache/
-.mypy_cache/
-.coverage
-coverage/
-htmlcov/
-
-# Temp files
-*.tmp
-*.temp
-
-# Compressed files
+# Compressed
 *.zip
 *.gz
 *.tar
@@ -61,4 +72,3 @@ htmlcov/
 *.tar.bz2
 *.tar.xz
 *.tar.zst
-```
